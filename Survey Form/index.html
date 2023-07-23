@@ -2,6 +2,7 @@
 
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <meta charset="UTF-8" />
     <title>Build a Survey Form</title>
     <link rel="stylesheet" href="styles.css" />
@@ -58,8 +59,10 @@
         </div>
 
         <div class="form-group">
-          <p>Which option best describes your current role?</p>
-          <select id="role-dropdown" name="role" class="form-control" required>
+          <label id="dropdown-label"
+            >Which option best describes your current role?</label
+          >
+          <select id="dropdown" name="role" class="form-control" required>
             <option disabled selected value="">Select current role</option>
             <option value="student">Student</option>
             <option value="fullTimeJob">Full Time Job</option>
@@ -70,7 +73,9 @@
         </div>
 
         <div class="form-group">
-          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label id="radio-label"
+            >Would you recommend freeCodeCamp to a friend?</label
+          >
           <label>
             <input
               type="radio"
@@ -105,9 +110,11 @@
         </div>
 
         <div class="form-group">
-          <p>What is your favorite feature of freeCodeCamp?</p>
+          <label id="dropdown-label"
+            >What is your favorite feature of freeCodeCamp?</label
+          >
           <select
-            id="feature-dropdown"
+            id="dropdown"
             name="favorite-feature"
             class="form-control"
             required
@@ -121,8 +128,10 @@
         </div>
 
         <div class="form-group">
-          <p>What would you like to see improved?</p>
-          <span class="clue">Check all that apply</span>
+          <label id="checkbox-label">
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </label>
           <label>
             <input
               type="checkbox"
@@ -162,7 +171,7 @@
         </div>
 
         <div class="form-group">
-          <p>Any Comments or Suggestions?</p>
+          <label id="textarea-label">Any Comments or Suggestions?</label>
           <textarea
             name="comment"
             id="comments"
